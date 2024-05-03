@@ -15,7 +15,7 @@ const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
 console.log(client_id);
 const scope = 'user-library-read playlist-modify-public playlist-modify-private';
-const redirect_uri = 'http://localhost:3000/redirect';
+const redirect_uri = 'https://youtube-to-spotify-playlist-converter.onrender.com/redirect';
 var spotifyPlaylistName;
 let userId;
 let accessToken;
