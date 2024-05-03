@@ -1,0 +1,126 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191414;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    color: #fff;
+}
+
+.main-content {
+    min-height: calc(100vh - 100px); /* Subtract footer height */
+    padding-bottom: 40px; /* Increase padding to create more space for footer */
+    position: relative;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #191414;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #15a749;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #191414;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 8px;
+}
+
+.about-section {
+    margin-top: 50px; /* Adjust margin-top as needed */
+    padding: 30px;
+    font-size: 24px; /* Adjust font size as needed */
+    color: #ddd; /* Light gray color */
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center align */
+    text-align: justify; /* Align text */
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+.about-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+    .about-section {
+        font-size: 18px;
+    }
+    .about-btn {
+        position: static;
+        display: block;
+        margin: 20px auto; /* Center the button */
+    }
+    button[type="submit"] {
+        margin-bottom: 10px; /* Adjust margin between the button and the footer */
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Convert YouTube Playlist to Spotify Playlist</title>
+</head>
+<body>
+    <div class="main-content">
+        <button class="about-btn" onclick="scrollToAbout()">About</button>
+        <div class="container">        
+            <form id="conversion-form" action="/login" method="POST">
+                <div class="form-header">
+                    <h2>Convert YouTube Playlist to Spotify Playlist</h2>
+                </div>
+                <div class="image-container">
+                    <img src="/images/background.png" alt="Background Image">
+                </div>
+                <label for="youtube">
+                    <input type="text" name="youtubePlaylistLink" placeholder="Enter YouTube playlist link" required>
+                </label>
+                <label for="spotify">
+                    <input type="text" name="spotifyPlaylistName" placeholder="Enter Spotify playlist name" required>
+                </label>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <div id="about" class="about-section">
+        <h2>About</h2>
+        <p>This website was created to provide a convenient way to convert YouTube playlists to Spotify playlists. It's a hobby project aimed at helping users easily transfer their favorite playlists between platforms. It has a daily quota and won't work if exceeded. Cheers!</p>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="www.linkedin.com/in/w-ricky-singha" target="_blank">LinkedIn</a>
+            <a href="https://github.com/RickySingha" target="_blank">GitHub</a>
+        </div>
+        <p>Designed and Developed by @ W.Ricky Singha</p>
+    </footer>
+
+    <script>
+        function scrollToAbout() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
