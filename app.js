@@ -13,9 +13,9 @@ app.use(express.json());
 const state = process.env.STATE_KEY;
 const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
-console.log(client_id);
+// console.log(client_id);
 const scope = 'user-library-read playlist-modify-public playlist-modify-private';
-const redirect_uri = 'https://youtube-to-spotify-playlist-converter.onrender.com/redirect';
+const redirect_uri = 'https://playlistshift.com/redirect';
 var spotifyPlaylistName;
 let userId;
 let accessToken;
@@ -82,12 +82,12 @@ app.get('/redirect', async (req, res) => {
         refreshToken = response.data.refresh_token;
         expiresAt = response.data.expires_in;
 
-        console.log(accessToken);
+        // console.log(accessToken);
 
         userId = await getUserId(accessToken);
         await createPlaylist(userId, spotifyPlaylistName, accessToken);
         const playlistId = await getPlaylistId(spotifyPlaylistName);
-        console.log(playlistId);
+        // console.log(playlistId);
         await addTracks(playlistId,videoName);
 
         res.sendFile(__dirname + "/public/success.html");
@@ -122,7 +122,7 @@ async function getUserId(accessToken) {
             }
         });
         const data = response.data;
-        console.log(data.id);
+        // console.log(data.id);
         return data.id;
     } catch (error) {
         console.error('Error fetching profile:', error);
