@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/main.css">
-    <title>Convert YouTube Playlist to Spotify Playlist</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Convert YouTube Playlist to Spotify Playlist | PlaylistShift</title>
+    <meta name="description" content="Convert your favorite YouTube playlists to Spotify playlists easily with PlaylistShift. Enjoy your music across platforms seamlessly.">
+    <meta name="keywords" content="YouTube playlist, Spotify playlist, convert playlist, PlaylistShift">
+    <meta name="author" content="W.Ricky Singha">
+    
+    <!-- Open Graph Meta Tags for social media -->
+    <meta property="og:title" content="Convert YouTube Playlist to Spotify Playlist | PlaylistShift">
+    <meta property="og:description" content="Easily convert your YouTube playlists to Spotify with PlaylistShift.">
+    <meta property="og:image" content="images/background.png">
+    <meta property="og:url" content="https://playslistshift.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Convert YouTube Playlist to Spotify Playlist | PlaylistShift">
+    <meta name="twitter:description" content="Easily convert your YouTube playlists to Spotify with PlaylistShift.">
+    <meta name="twitter:image" content="images/background.png">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+
 </head>
 <body>
     <div class="main-content">
@@ -13,23 +33,21 @@
         <div class="container">        
             <form id="conversion-form" action="/login" method="POST">
                 <div class="form-header">
-                    <h2>Convert YouTube Playlist to Spotify Playlist</h2>
+                    <h1>Convert YouTube Playlist to Spotify Playlist</h1>
                 </div>
                 <div class="image-container">
-                    <img src="images/background.png" alt="Background Image">
+                    <img src="images/background.png" alt="Background of music notes" width="600" height="400">
                 </div>
                 <label for="youtube">
-                    <input type="text" name="youtubePlaylistLink" placeholder="Enter YouTube playlist link" required>
+                    <input type="text" id="youtube" name="youtubePlaylistLink" placeholder="Enter YouTube playlist link" required>
                 </label>
                 <label for="spotify">
-                    <input type="text" name="spotifyPlaylistName" placeholder="Enter Spotify playlist name" required>
+                    <input type="text" id="spotify" name="spotifyPlaylistName" placeholder="Enter Spotify playlist name" required>
                 </label>
                 <button type="submit">Create</button>
             </form>
         </div>
     </div>
-    
-    
 
     <div id="about" class="about-section">
         <h2>About</h2>
@@ -40,7 +58,7 @@
             <a href="https://in.linkedin.com/in/w-ricky-singha" target="_blank">LinkedIn</a>
             <a href="https://github.com/RickySingha" target="_blank">GitHub</a>
         </div>
-        <p>Designed and Developed by @ W.Ricky Singha</p>
+        <p>Designed and Developed by W.Ricky Singha</p>
     </footer>
 
     <script>
